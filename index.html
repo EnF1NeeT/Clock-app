@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>Clock App</title>
     <!-- Favicon -->
     <link
@@ -20,7 +19,7 @@
   </head>
   <body class="d-flex flex-column justify-content-between">
     <!-- Quote section -->
-    <div class="container pt-5" id="quote">
+    <div class="container pt-5 slide-in-top" id="quote">
       <div class="row">
         <div class="col-xl-8 col-md-10 col-10">
           <figure>
@@ -109,7 +108,7 @@
     <div
       class="container-fluid d-none slide-in-bottom"
       style="
-        background-color: rgba(255, 255, 255, 0.55);
+        background-color: rgba(3, 3, 3, 0.55);
         backdrop-filter: blur(20.387113571166992px);
       "
       id="expand-time"
@@ -118,58 +117,32 @@
         <div class="row">
           <div class="col-6 col-md-7">
             <div class="mb-5">
-              <h6
-                class="display-6 fw-regular fh-28 ls-3 text-uppercase text-secondary"
-              >
+              <h6 class="display-6 fw-regular fh-28 ls-3 text-uppercase">
                 CURRENT TIMEZONE
               </h6>
-              <h2
-                id="currnet-time-zone"
-                class="display-3 fw-bold fh-68 text-secondary"
-              >
+              <h2 id="currnet-time-zone" class="display-3 fw-bold fh-68">
                 Europe/London
               </h2>
             </div>
             <div>
-              <h6
-                class="display-5 fw-regular fh-28 ls-3 text-uppercase text-secondary"
-              >
+              <h6 class="display-5 fw-regular fh-28 ls-3 text-uppercase">
                 Day of the year
               </h6>
-              <h2
-                id="day-of-the-year"
-                class="display-3 fw-bold fh-68 text-secondary"
-              >
-                295
-              </h2>
+              <h2 id="day-of-the-year" class="display-3 fw-bold fh-68">295</h2>
             </div>
           </div>
           <div class="col-6 col-md-5 border-black border-start">
             <div class="mb-5">
-              <h6
-                class="display-6 fw-regular fh-28 ls-3 text-uppercase text-secondary"
-              >
+              <h6 class="display-6 fw-regular fh-28 ls-3 text-uppercase">
                 Day of the week
               </h6>
-              <h2
-                id="day-of-the-week"
-                class="display-3 fw-bold fh-68 text-secondary"
-              >
-                5
-              </h2>
+              <h2 id="day-of-the-week" class="display-3 fw-bold fh-68">5</h2>
             </div>
             <div class="mb-5">
-              <h6
-                class="display-6 fw-regular fh-28 ls-3 text-uppercase text-secondary"
-              >
+              <h6 class="display-6 fw-regular fh-28 ls-3 text-uppercase">
                 Week number
               </h6>
-              <h2
-                id="week-number"
-                class="display-3 fw-bold fh-68 text-secondary"
-              >
-                42
-              </h2>
+              <h2 id="week-number" class="display-3 fw-bold fh-68">42</h2>
             </div>
           </div>
         </div>
