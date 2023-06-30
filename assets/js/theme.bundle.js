@@ -141,7 +141,7 @@
     w(), d.addEventListener("click", w);
     !(function () {
       const e = new XMLHttpRequest();
-      e.open("GET", "http://worldtimeapi.org/api/ip"),
+      e.open("GET", "https://worldtimeapi.org/api/ip"),
         e.send(),
         e.addEventListener("load", function () {
           const e = JSON.parse(this.responseText);
